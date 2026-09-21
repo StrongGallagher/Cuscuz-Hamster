@@ -458,7 +458,7 @@ img { -ms-interpolation-mode: nearest-neighbor; }
 .about-mascot {
   display: block;
   margin: 6px auto 22px;
-  width: 100px;
+  width: 100%;
   image-rendering: pixelated;
   
 }
@@ -498,13 +498,18 @@ img { -ms-interpolation-mode: nearest-neighbor; }
   gap: 10px;
 }
 .link-modal-title { font-size: 12px; }
-#link-modal-frame {
+.link-modal-clickable {
   flex: 1;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+#link-modal-frame {
   width: 100%;
   height: 100%;
   object-fit: contain;
   background: #000;
   image-rendering: pixelated;
 }
-
 
