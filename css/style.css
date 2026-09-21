@@ -458,9 +458,9 @@ img { -ms-interpolation-mode: nearest-neighbor; }
 .about-mascot {
   display: block;
   margin: 6px auto 22px;
-  width: 96px;
+  width: 100px;
   image-rendering: pixelated;
-  animation: mascotBounce 1.6s ease-in-out infinite;
+  
 }
 @keyframes mascotBounce {
   0%, 100% { transform: translateY(0); }
