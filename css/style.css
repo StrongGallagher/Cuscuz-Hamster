@@ -501,16 +501,10 @@ img { -ms-interpolation-mode: nearest-neighbor; }
 #link-modal-frame {
   flex: 1;
   width: 100%;
-  border: none;
-  background: #fff;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  image-rendering: pixelated;
 }
-.link-modal-fallback {
-  font-family: var(--pixel-font);
-  font-size: 9px;
-  color: #ddd;
-  text-align: center;
-  padding: 18px 8px 10px;
-}
-.link-modal-fallback a { color: var(--accent); }
 
 
