@@ -112,20 +112,18 @@ document.getElementById('btn-exit').addEventListener('click', () => {
   }
 });
 
-// ---------- in-game link viewer (opens the About page link inside an iframe) ----------
+// ---------- in-game sponsor gif viewer ----------
 const linkModal = document.getElementById('link-modal');
 const linkFrame = document.getElementById('link-modal-frame');
-const linkFallback = document.getElementById('link-modal-fallback-link');
 
 document.getElementById('btn-visit-link').addEventListener('click', (e) => {
   const url = e.currentTarget.dataset.link;
   if (!url) return;
   linkFrame.src = url;
-  linkFallback.href = url;
   linkModal.classList.remove('hidden');
 });
 
 document.getElementById('btn-close-link').addEventListener('click', () => {
   linkModal.classList.add('hidden');
-  linkFrame.src = ''; // stop whatever the embedded page was doing
+  linkFrame.src = '';
 });
